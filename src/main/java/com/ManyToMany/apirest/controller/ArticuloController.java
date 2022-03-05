@@ -118,15 +118,10 @@ public class ArticuloController {
 		
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.CREATED);
 		
-		
-		
-		
 	}
 
-	
 	@PutMapping("/articulo/excepciones/{id}")
 	public ResponseEntity<?> updateClienteExcepciones(@RequestBody Articulo articulo, @PathVariable Long id) {
-	
 		
 		Map<String,Object> 	response = new HashMap<>();
 		Articulo articuloActual=servicio.findById(id);
@@ -146,7 +141,6 @@ public class ArticuloController {
 		articuloActual.setPrecio(articulo.getPrecio());
 		articuloActual.setStock(articulo.getStock());
 		articuloActual.setStockSeguridad(articulo.getStockSeguridad());
-
 
 		
 		servicio.save(articuloActual);

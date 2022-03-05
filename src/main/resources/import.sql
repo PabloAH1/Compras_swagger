@@ -15,3 +15,13 @@ INSERT INTO compras (fecha, unidades, cod_articulo, cod_cliente) VALUES ('2022-0
 INSERT INTO compras (fecha, unidades, cod_articulo, cod_cliente) VALUES ('2020-02-07 13:44:10.000000', 8, 3, 4);
 INSERT INTO compras (fecha, unidades, cod_articulo, cod_cliente) VALUES ('2019-01-05 13:44:10.000000', 9, 2, 3);
 INSERT INTO compras (fecha, unidades, cod_articulo, cod_cliente) VALUES ('2017-03-01 13:44:10.000000', 10, 1, 3);
+
+INSERT INTO usuarios (username,password,enabled) VALUES ('pedro','',1);
+INSERT INTO usuarios (username,password,enabled) VALUES ('admin','',1);
+
+INSERT INTO roles (nombre) VALUES ('ROLE_USER');
+INSERT INTO roles (nombre)VALUES ('ROLE_ADMIN');
+
+INSERT INTO usuarios_roles (usuario_id,role_id)VALUES(1,1);
+INSERT INTO usuarios_roles (usuario_id,role_id)VALUES(2,2);
+INSERT INTO usuarios_roles (usuario_id,role_id)VALUES(2,1);
