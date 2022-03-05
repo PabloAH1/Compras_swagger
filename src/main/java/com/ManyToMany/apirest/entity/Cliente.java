@@ -13,7 +13,7 @@ import javax.persistence.Id;
 //import javax.persistence.JoinColumn;
 //import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-//hola
+
 //import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
